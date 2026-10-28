@@ -14,50 +14,18 @@
     font-family: Staatliches;
     src: url("../Fonts/Staatliches/Staatliches-Regular.ttf") format("truetype")
 }
-
+*{
+    color: white;
+}
+:root{
+    --primary-color: #F37362;
+}
 body{
     display: flex;
-    justify-content: center;
-    background-color: #3C0EC5;
-    background: linear-gradient(#3C0EC5 12%, #000000);
-    color: white;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0px;
-    padding: 0px 30px;
-}
-.mainContainer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.logoText{
-    font-family: Staatliches;
-    font-size: clamp(29px, 4vw, 40px);
-    text-align: end;
-    margin: 0px;
-}
-#logo{
-    display: grid;
-    grid-template: repeat(2, clamp(36px ,4vw, 46.5px))/ clamp(72px ,10vw, 93px) clamp(81px, 10vw, 101px);
-    margin-top: 28px;
+    justify-content: center;  
+    background-color: #4E5166;
+    background-image: url(../Assets/images/pattern-lines.svg);    
 }
 img{
-    height: clamp(72px ,10vw, 93px);
-}
-#logoText2{
-    grid-area: 2/2/3/3;
-    text-align: end;
-    align-items: start;
-}
-h1{
-    font-family: 'Quattrocento', Georgia, Cambria, 'Times New Roman', Times, serif;
-    font-style: bold;
-    font-size: clamp(29px, 4vw, 70px);
     text-align: center;
-    margin: 0px;
-}
-h2{
-    text-align: center;
-    font-size: 30px;
 }
