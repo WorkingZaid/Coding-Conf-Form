@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf Sign in</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <img id="circle" src="../Assets/images/pattern-circle.svg" alt="image of circle" aria-hidden="true">
+    <div id="mainContainer">
+        <img src="../Assets/images/logo-full.svg" alt="Coding Conf Logo" id="loginLogo" class="">
+        <h1 id="loginHeader">SIGN UP TO GET YOUR TICKET</h1>
+        <div id="uploadContainer">
+            <img src="../assets/images/icon-upload.svg" alt="Upload icon" id="uploadIcon">
+            <p id="dragAndDropLabel">Drag and drop or click to upload</p>
+        </div>
+        <form action="POST" id="formContainer">
+            <div id="inputFields">
+                <div id="name">
+                    <label for="nameInput" class="inputLabels">Full Name: </label>
+                    <input type="input" id="nameInput">
+                </div>
+                <div id="email">
+                    <label for="emailInput" class="inputLabels">Email Address: </label>
+                    <input type="input" id="emailInput">
+                </div>
+                <div id="githubUser">
+                    <label for="githubInput" class="inputLabels">Github Username</label>
+                    <input type="input" id="githubInput">
+                </div>
+            </div>
+            <button id="submitButton"><img src="../assets/images/ticketGraphic.png" alt="Graphic of a ticket"
+                    class="ticketImgButton">Generate My Ticket<img src="../assets/images/ticketGraphic.png"
+                    alt="Graphic of a ticket" class="ticketImgButton"></button>
+
+        </form>
+    </div>
+</body>
+
+</html>

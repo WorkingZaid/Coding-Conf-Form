@@ -29,7 +29,7 @@ body{
     margin: 0px;    
     padding: 0px 242px;   
 }
-img{
+#landingPageLogo{
     height: 30px;
     width: 209px;
     margin-top: 30px;
@@ -97,3 +97,59 @@ img{
     letter-spacing: 10%;
     text-align: center;
 }
+/*Doing Login Now*/
+#loginHeader{
+    font-size: 50px;
+    font-family: Staatliches;
+    font-weight: 500;
+}
+#loginLogo{
+    height: 30px;
+    width: 209px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#uploadContainer{
+    width: 551px;
+    height: 183px;
+    background-color: rgb(255 255 255 / 0.13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: rgba(0, 0, 0, 0.4) dashed 5px;
+    z-index: -1;
+}
+#uploadIcon{
+    width: 130px;
+    height: 130px;
+    margin: 0px;
+}
+#dragAndDropLabel{
+    font-family: Montserrat;
+    font-size: 25px;
+    opacity: 85%;
+    margin: 0px;
+}
+#inputFields{
+   display: grid; 
+    grid-template: 1fr/repeat(3, 370px)
+}
+#formContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#submitButton{
+    max-width: 515px;
+    max-height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap: 50px;
+    border-radius: 20px;
+    font-family: Libre Baskerville;
+}
+
