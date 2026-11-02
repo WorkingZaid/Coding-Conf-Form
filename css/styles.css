@@ -1,0 +1,99 @@
+@font-face{
+    font-family: Lato;
+    src: url("../Fonts/Lato/Lato-Regular.ttf") format("truetype")
+}
+@font-face{
+    font-family: Montserrat;
+    src: url("../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype")
+}
+@font-face{
+    font-family: Quattrocento;
+    src: url("../Fonts/Quattrocento/Quattrocento-Bold.ttf") format("truetype")
+}
+@font-face{
+    font-family: Staatliches;
+    src: url("../Fonts/Staatliches/Staatliches-Regular.ttf") format("truetype")
+}
+*{
+    color: white;
+}
+:root{
+    --primary-color: #F37362;
+}
+body{
+    display: flex;
+    justify-content: center;  
+    background-color: #4E5166;
+    background-image: url(../Assets/images/pattern-lines.svg);  
+    background-repeat: no-repeat;
+    margin: 0px;    
+    padding: 0px 242px;   
+}
+img{
+    height: 30px;
+    width: 209px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    box-sizing: border-box;    
+}
+#landingPageHeading{
+    font-family: Quattrocento, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 32px;
+}
+#here{
+    color: var(--primary-color);
+}
+#eventInfo{
+    font-family: lato, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;  
+    opacity: 85%;  
+    margin: 0px;
+    margin-bottom: 70px;
+}
+#arrowButton{
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+}
+#arrowButton:hover{
+    background-image: url(../Assets/images/Arrow\ up-circle-white.png);
+    width: 300px;
+    height: 300px;
+    margin: 0px;      
+}
+#arrowButtonAnchor{
+    grid-area: 1/1/2/2;
+}
+#circle{
+    position: absolute;
+    top: 42px;
+    left: 222px;
+    width: 220px;
+    height: 220px;
+}
+#regButtonandFooter{
+    display: grid;
+    grid-template: 300px/300px;
+    justify-items: center;
+}
+#registerInfo{
+    margin: 0px;   
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--primary-color);
+    letter-spacing: 10%;
+    text-align: center;
+}
