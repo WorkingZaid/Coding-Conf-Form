@@ -6,35 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Conf Sign in</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scripts.js" defer></script>
 </head>
 
 <body>
     <img id="circle" src="../Assets/images/pattern-circle.svg" alt="image of circle" aria-hidden="true">
     <div id="mainContainer">
-        <img src="../Assets/images/logo-full.svg" alt="Coding Conf Logo" id="loginLogo" class="">
+        <a href="../HTML/index.html"><img src="../Assets/images/logo-full.svg" alt="Coding Conf Logo"
+                id="loginLogo"></a>
         <h1 id="loginHeader">SIGN UP TO GET YOUR TICKET</h1>
         <div id="uploadContainer">
             <img src="../assets/images/icon-upload.svg" alt="Upload icon" id="uploadIcon">
             <p id="dragAndDropLabel">Drag and drop or click to upload</p>
         </div>
         <form action="POST" id="formContainer">
-            <div id="inputFields">
-                <div id="name">
+            <div id="inputFieldsContainer">
+                <div id="name" class="inputContainer">
                     <label for="nameInput" class="inputLabels">Full Name: </label>
-                    <input type="input" id="nameInput">
+                    <input type="input" id="nameInput" class="inputField">
                 </div>
-                <div id="email">
+                <div id="email" class="inputContainer">
                     <label for="emailInput" class="inputLabels">Email Address: </label>
-                    <input type="input" id="emailInput">
+                    <input type="input" id="emailInput" class="inputField">
                 </div>
-                <div id="githubUser">
-                    <label for="githubInput" class="inputLabels">Github Username</label>
-                    <input type="input" id="githubInput">
+                <div id="githubUser" class="inputContainer">
+                    <label for="githubInput" class="inputLabels">Github Username:</label>
+                    <input type="input" id="githubInput" class="inputField">
                 </div>
             </div>
             <button id="submitButton"><img src="../assets/images/ticketGraphic.png" alt="Graphic of a ticket"
-                    class="ticketImgButton">Generate My Ticket<img src="../assets/images/ticketGraphic.png"
-                    alt="Graphic of a ticket" class="ticketImgButton"></button>
+                    class="ticketImgButton"><span id="submitButtonText">Generate My Ticket</span><img
+                    src="../assets/images/ticketGraphic.png" alt="Graphic of a ticket" class="ticketImgButton"></button>
 
         </form>
     </div>

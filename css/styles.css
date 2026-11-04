@@ -1,18 +1,22 @@
 @font-face{
     font-family: Lato;
-    src: url("../Fonts/Lato/Lato-Regular.ttf") format("truetype")
+    src: url("../assets/Fonts/Lato/Lato-Regular.ttf") format("truetype")
 }
 @font-face{
     font-family: Montserrat;
-    src: url("../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype")
+    src: url("../assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype")
 }
 @font-face{
     font-family: Quattrocento;
-    src: url("../Fonts/Quattrocento/Quattrocento-Bold.ttf") format("truetype")
+    src: url("../assets/Fonts/Quattrocento/Quattrocento-Bold.ttf") format("truetype")
 }
 @font-face{
     font-family: Staatliches;
-    src: url("../Fonts/Staatliches/Staatliches-Regular.ttf") format("truetype")
+    src: url("../assets/Fonts/Staatliches/Staatliches-Regular.ttf") format("truetype")
+}
+@font-face{
+    font-family: Libre Baskerville;
+    src: url(../assets/Fonts/Libre_Baskerville/LibreBaskerville-Italic-VariableFont_wght.ttf) format("truetype");
 }
 *{
     color: white;
@@ -26,8 +30,10 @@ body{
     background-color: #4E5166;
     background-image: url(../Assets/images/pattern-lines.svg);  
     background-repeat: no-repeat;
+    background-size: cover;
     margin: 0px;    
     padding: 0px 242px;   
+    padding-bottom: 30px;
 }
 #landingPageLogo{
     height: 30px;
@@ -99,7 +105,7 @@ body{
 }
 /*Doing Login Now*/
 #loginHeader{
-    font-size: 50px;
+    font-size: 60px;
     font-family: Staatliches;
     font-weight: 500;
 }
@@ -110,8 +116,8 @@ body{
     margin-bottom: 20px;
 }
 #uploadContainer{
-    width: 551px;
-    height: 183px;
+    width: 690px;
+    height: 230px;
     background-color: rgb(255 255 255 / 0.13);
     display: flex;
     justify-content: center;
@@ -119,37 +125,77 @@ body{
     flex-direction: column;
     border-radius: 20px;
     border: rgba(0, 0, 0, 0.4) dashed 5px;
-    z-index: -1;
+    margin-bottom: 75px;
 }
 #uploadIcon{
-    width: 130px;
-    height: 130px;
+    width: 163px;
+    height: 163px;
     margin: 0px;
 }
 #dragAndDropLabel{
     font-family: Montserrat;
-    font-size: 25px;
+    font-size: 30px;
     opacity: 85%;
     margin: 0px;
 }
-#inputFields{
+#inputFieldsContainer{
    display: grid; 
-    grid-template: 1fr/repeat(3, 370px)
+    grid-template: 1fr/repeat(auto-fit, minmax(540px, 1fr));
+    justify-items: center;
+    gap: 40px;
+    width: 98vw;
 }
 #formContainer{
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 91px;
 }
 #submitButton{
-    max-width: 515px;
-    max-height: 63px;
+    width: 660px;
+    height: 88px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #7A7C8C;
     color: black;
     gap: 50px;
     border-radius: 20px;
     font-family: Libre Baskerville;
+    font-size: 35px;
+    border: black, solid, 2px;
 }
+.ticketImgButton{
+    width: 75px;
+    height: 75px;
+}
+#submitButtonText{
+    color: black;
+}
+#submitButtonText:hover{
+    background: linear-gradient(#F57463 15%, #FFFFFF 80%);
+    background-clip: text;
+    color: transparent;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+.inputField{
+    width: 540px;
+    height: 62px;
+    background-color: rgb(255, 255, 255,0.25);
+    border: rgb(0,0,0,0.45), solid, 3px;
+    border-radius: 10px;
+    font-style: Montserrat;
+    font-size: 32px;
+    padding-left: 20px;
+}
+.inputLabels{
+    font-family: Lato;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
 
