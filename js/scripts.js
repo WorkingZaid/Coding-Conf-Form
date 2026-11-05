@@ -7,16 +7,12 @@ const email = document.getElementById("emailInput");
 const github = document.getElementById("githubInput");
 const formButton = document.getElementById("formContainer");
 
-
-function getinput(e){
-    e.preventDefault();
-    localStorage.setItem("nameInput", fName.value);
-    localStorage.setItem("emailInput", email.value);
-    localStorage.setItem("githubInput", github.value);
-
-    console.log("eriuogn");
-    
+function getinput(e) {
+  localStorage.setItem("nameInput", fName.value);
+  localStorage.setItem("emailInput", email.value);
+  localStorage.setItem("githubInput", github.value);
 }
 
-formButton.addEventListener("submit", getinput);
-
+if (formButton) {
+  formButton.addEventListener("submit", getinput);
+}
