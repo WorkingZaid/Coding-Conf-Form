@@ -17,7 +17,9 @@
         <h1 id="loginHeader">SIGN UP TO GET YOUR TICKET</h1>
         <div id="uploadContainer">
             <img src="../assets/images/icon-upload.svg" alt="Upload icon" id="uploadIcon">
-            <p id="dragAndDropLabel">Drag and drop or click to upload</p>
+            <label for="uploadProfilePicture" id="dragAndDropLabel">Drag and drop or click to upload</label>
+            <input type="file" name="profilePicture" id="uploadProfilePicture">
+            
         </div>
         <form method="post" action="ticket.html" id="formContainer">
             <div id="inputFieldsContainer">
@@ -35,8 +37,9 @@
                 </div>
             </div>
             <button id="submitButton"><img src="../assets/images/ticketGraphic.png" alt="Graphic of a ticket"
-                    class="ticketImgButton"><span id="submitButtonText">Generate My Ticket</span><img
-                    src="../assets/images/ticketGraphic.png" alt="Graphic of a ticket" class="ticketImgButton"></button>
+                    class="ticketImgButton" aria-hidden="true"><span id="submitButtonText">Generate My Ticket</span><img
+                    src="../assets/images/ticketGraphic.png" alt="Graphic of a ticket" class="ticketImgButton"
+                    aria-hidden="true"></button>
 
         </form>
     </div>
