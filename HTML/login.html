@@ -17,7 +17,7 @@
         <div id="uploadContainer">
             <img src="../assets/images/icon-upload.svg" alt="Upload icon" id="uploadIcon">
             <label for="uploadProfilePicture" id="dragAndDropLabel">Drag and drop or click to upload</label>
-            <input type="file" name="profilePicture" id="uploadProfilePicture">
+            <input type="file" name="profilePicture" id="uploadProfilePicture" required form="formContainer">
 
         </div>
         <form method="post" action="ticket.html" id="formContainer">
@@ -28,19 +28,18 @@
                 </div>
                 <div id="email" class="inputContainer">
                     <label for="emailInput" class="inputLabels">Email Address: </label>
-                    <input type="email"  class="inputField" required>
+                    <input type="email" class="inputField" required>
                 </div>
                 <div id="githubUser" class="inputContainer">
                     <label for="githubInput" class="inputLabels">Github Username:</label>
                     <input type="input" class="inputField" name="githubInput" required maxlength="39"
-           pattern="[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*">
+                        pattern="[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*">
                 </div>
             </div>
             <button id="submitButton"><img src="../assets/images/ticketGraphic.png" alt="Graphic of a ticket"
                     class="ticketImgButton" aria-hidden="true"><span id="submitButtonText">Generate My Ticket</span><img
                     src="../assets/images/ticketGraphic.png" alt="Graphic of a ticket" class="ticketImgButton"
                     aria-hidden="true"></button>
-
         </form>
     </div>
 </body>

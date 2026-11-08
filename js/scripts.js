@@ -13,6 +13,7 @@ const pictureInput = document.getElementById("uploadProfilePicture");
 const uploadIcon = document.getElementById("uploadIcon");
 const pictureTicket = document.getElementById("profilePicture");
 const ticketName = document.getElementById("gradientName");
+const loginPageClear = document.getElementById("inputFieldsContainer");
 
 //Coding the drag and drop portion of the login page
 
@@ -36,6 +37,7 @@ if (userLegalName) {
 }
 /*Handling drag and drop system*/
 let currentURL = null;
+
 if (pictureInput) {
   pictureInput.addEventListener("change", (e) => {
     const file = e.target.files[0];
