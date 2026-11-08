@@ -10,11 +10,9 @@
 </head>
 
 <body>
-    <img id="circle" src="../Assets/images/pattern-circle.svg" alt="image of circle" aria-hidden="true">
     <div id="mainContainer">
         <a href="index.html"><img src="../Assets/images/logo-full.svg" alt="Coding Conf Logo" id="landingPageLogo"></a>
-        <h1 id="landingPageHeading">Congrats, <span id="gradientName">John Doe!</span> Your ticket is ready <span
-                id="here">here!</span></h1>
+        <h1 id="landingPageHeading">Congrats, <span id="gradientName">John Doe</span>! Your Ticket Is Ready.</h1>
         <h2 id="eventInfo">We have emailed your ticket to <span id="email">johndoe@gmail.com</span> and will send
             updates in the run up to the event.</h2>
         <div id="ticketContainer">
@@ -28,10 +26,17 @@
                 <h3 id="userLegal">John Doe</h3>
                 <img src="../assets/images/icon-github.svg" alt="Image of github logo" aria-hidden="true"
                     id="githubLogo">
-                <p id="userName">@JohnJohnDoe123</p>
+                <p>@<span id="userName">JohnJohnDoe123</span></p>
             </div>
         </div>
     </div>
 </body>
 
 </html>
+
+<!--
+    Things to do:
+    1. Fix responsiveness
+    2. Add dynamic font sizes
+    3. Make sure that users attempting to view ticket.html directly without data are redirected back to index.html instantly.
+-->
